@@ -49,7 +49,17 @@ html {
   text-align: center;
 }
 
-.example {
+.heart {
+  display: inline-block;
+  width: 20px;
+  margin-top: 10px;
+}
+
+.heart:not(:last-child) {
+  margin-right: 10px;
+}
+
+.fruitsContainear {
   position: absolute;
   top: 12%;
   left: 50%;
@@ -62,6 +72,12 @@ html {
   font-size: 100px;
   line-height: 150px;
   text-align: center;
+  overflow: hidden;
+}
+
+.fruit {
+  display: none;
+  position: absolute;
 }
 
 .instruction {

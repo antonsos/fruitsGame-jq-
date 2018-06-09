@@ -4,18 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MathGame</title>
+  <title>Fruits Game</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <section class="containear">
     <div class="score">Score: <span class="score-value">0</span></div>
-    <div class="lives">Correct</div>
-    <div class="example"></div>
+    <div class="lives"></div>
+    <div class="fruitsContainear">
+      <img src="images/apple.png" alt="fruit" class="fruit">
+    </div>
     <div class="instruction">Catch Fruits</div>
     <div class="start-reset">Start Game</div>
     <div class="game-over">GAME OVER!<br>YOUR SCORE IS <span class="game-score">0</span>.</div>
+    <audio class="sound">
+      <source src="audio/slicefruit.mp3"></source>
+      <source src="audio/slicefruit.ogg"></source>
+    </audio>
   </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
